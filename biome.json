@@ -1,0 +1,26 @@
+{
+  "$schema": "./packages/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignore": ["dist/**", "assets/**", "public/**"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": {
+          "options": {
+            "attributes": ["classList"],
+            "functions": ["clsx", "cva", "tw"]
+          }
+        }
+      }
+    }
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "organizeImports": {
+    "enabled": true
+  }
+}

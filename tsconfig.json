@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@hitachivantara/uikit-react-core": ["packages/core/src"],
+      "@hitachivantara/uikit-styles": ["packages/styles/src"],
+      "@hitachivantara/uikit-uno-preset": ["packages/uno-preset/src"]
+    }
+  },
+  "include": [
+    ".config",
+    "apps",
+    "packages",
+    "apps/storybook/.storybook/blocks",
+    "apps/storybook/.storybook/decorators",
+    "apps/storybook/.storybook/theme",
+    "apps/storybook/.storybook/main.ts",
+    "apps/storybook/.storybook/preview.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

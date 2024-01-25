@@ -1,0 +1,29 @@
+{
+  "name": "@hitachivantara/uikit",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumada-design/hv-uikit-react.git"
+  },
+  "license": "Apache-2.0",
+  "author": "UI Kit team",
+  "scripts": {
+    "playground": "npm run dev -w apps/app",
+    "storybook": "npm run dev -w apps/storybook",
+    "build": "npm run build -w packages",
+    "typecheck": "npm run typecheck -w packages",
+    "check": "biome check --apply-unsafe .",
+    "publish": "npm publish -w packages"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "@biomejs/biome": "1.6.1",
+    "@types/node": "^20.11.27",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-plugin-dts": "^3.7.3",
+    "vite-tsconfig-paths": "^4.3.1"
+  },
+  "workspaces": ["packages/*", "apps/*"]
+}
